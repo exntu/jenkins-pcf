@@ -1,0 +1,7 @@
+applications:
+- name: jenkins
+  memory: 2048M
+  buildpack: java_buildpack_offline
+  service:
+    - jenkins-${name}:mysql
+  timeout:360
